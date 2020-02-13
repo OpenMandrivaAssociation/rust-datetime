@@ -1,0 +1,26 @@
+From 2ce3535d44ac97d45d19a5066d96e3926bdc52df Mon Sep 17 00:00:00 2001
+From: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+Date: Tue, 21 Nov 2017 07:13:56 +0100
+Subject: [PATCH] drop regex from dependency set
+
+It is effectively not used.
+
+Signed-off-by: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+---
+ tests/parsing.rs | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/tests/parsing.rs b/tests/parsing.rs
+index 04a007b..22e5254 100644
+--- a/tests/parsing.rs
++++ b/tests/parsing.rs
+@@ -1,6 +1,5 @@
+ extern crate datetime;
+ use datetime::{LocalDateTime, Weekday, Month, LocalDate};
+-extern crate regex;
+ 
+ extern crate rustc_serialize;
+ use rustc_serialize::json::Json;
+-- 
+2.15.0
+
